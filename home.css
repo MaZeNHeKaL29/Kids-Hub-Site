@@ -71,7 +71,7 @@ p.intro {
 
 
 .main_image {
-    width: 700px;
+    width: auto;
     /* adjust as needed */
     height: auto;
     /* keeps aspect ratio */
