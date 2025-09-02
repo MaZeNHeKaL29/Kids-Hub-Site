@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    /* playful font */
+    background: #fdf6e3;
+    /* soft cream background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 30px 0 10px;
+    font-size: 2.5em;
+    color: #ff6b6b;
+    /* bright red-pink */
+    text-shadow: 2px 2px #ffe066;
+    /* yellow shadow for fun */
+}
+
+p.intro {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 600px;
+    color: #444;
+}
+
+/* features grid */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #ffeb99;
+    /* sunny yellow */
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.2s, background 0.3s;
+    text-align: center;
+    border: 3px solid #ff6b6b;
+    /* playful border */
+    box-shadow: 4px 4px #ffd93d;
+}
+
+.card:hover {
+    transform: scale(1.08) rotate(-2deg);
+    background: #a0e7e5;
+    /* minty blue */
+}
+
+.card a {
+    text-decoration: none;
+    color: #ff477e;
+    /* bright pink */
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card:last-child {
+    grid-column: 2;
+}
+
+
+.main_image {
+    width: 700px;
+    /* adjust as needed */
+    height: auto;
+    /* keeps aspect ratio */
+}
+

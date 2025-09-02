@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  background: #fffbea; /* soft pastel yellow */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff6b6b; /* cheerful pink */
+  text-shadow: 1px 1px #ffd93d; /* yellow highlight */
+}
+
+.maze {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.step {
+  background: #caffbf; /* light green */
+  padding: 15px;
+  border-radius: 15px;
+  border: 3px solid #ff6b6b; /* pink border */
+  box-shadow: 4px 4px #ffd93d;
+}
+
+input {
+  display: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+  width: 300px; /* same width as maze */
+}
+
+label,
+.button {
+  background: #ffd93d; /* bright yellow */
+  color: #333;
+  padding: 12px;
+  margin: 8px 0;
+  border: 3px solid #ff6b6b; /* pink outline */
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.1s;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+label:hover,
+.button:hover {
+  background: #a0e7e5; /* mint blue hover */
+  transform: scale(1.05) rotate(-2deg);
+}

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    background: #fffbea; /* soft pastel yellow */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff6b6b; /* cheerful pink */
+    text-shadow: 1px 1px #ffd93d; /* fun yellow shadow */
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+    width: 300px; /* same width as maze */
+}
+
+label,
+.button {
+    background: #ffd93d; /* bright yellow */
+    color: #333;
+    padding: 12px;
+    margin: 8px 0;
+    border: 3px solid #ff6b6b; /* pink outline */
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.1s;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+label:hover,
+.button:hover {
+    background: #a0e7e5; /* mint blue on hover */
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.video-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 820px; /* fits video embeds */
+    border: 3px solid #ff6b6b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 4px 4px #ffd93d;
+    background: #caffbf; /* light green inside */
+}
+
+.video-table td {
+    padding: 12px;
+    border-bottom: 2px dashed #ffb347; /* orange dashed separators */
+}

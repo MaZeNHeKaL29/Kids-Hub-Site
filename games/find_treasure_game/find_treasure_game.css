@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    background: #fffbea; /* soft pastel yellow */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+}
+
+.board input {
+    display: none;
+}
+
+.chest {
+    width: 100px;
+    height: 100px;
+    background: #ffd93d; /* bright yellow */
+    border: 3px solid #ff6b6b; /* pink border */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2em;
+    transition: background 0.3s, transform 0.1s;
+    position: relative;
+    box-shadow: 4px 4px #ffd93d;
+}
+
+.chest:hover {
+    background: #a0e7e5; /* mint blue hover */
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.board input:checked+label::after {
+    content: "🗑️"; /* trash emoji */
+    position: absolute;
+}
+
+#treasure:checked+label::after {
+    content: "💎"; /* diamond */
+}
+
+.chest::after {
+    content: "";
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+    grid-column: span 3; /* buttons centered under grid */
+}
+
+.button {
+    background: #ffb347; /* orange */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #ff6b6b;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.1s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 3px #ffd93d;
+}
+
+.button:hover {
+    background: #ff477e; /* pink hover */
+    transform: scale(1.08);
+}
