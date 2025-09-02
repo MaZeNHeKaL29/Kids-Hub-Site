@@ -63,3 +63,22 @@ label:hover,
     padding: 8px 0;
     border-bottom: 2px dashed #ffb347; /* orange dashed rows */
 }
+
+/* wrapper for main content */
+main {
+    flex: 1;
+    /* pushes footer down */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    /* playful pink */
+    text-shadow: 1px 1px #ffd93d;
+    /* yellow highlight */
+}

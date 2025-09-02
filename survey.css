@@ -126,3 +126,38 @@ input[type="submit"]:hover {
     /* pink on hover */
     transform: scale(1.05);
 }
+
+/* wrapper for main content */
+main {
+    flex: 1;
+    /* pushes footer down */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    /* playful pink */
+    text-shadow: 1px 1px #ffd93d;
+    /* yellow highlight */
+}
+
+#thanks_feedback {
+    font-family: "Comic Sans MS", Arial, sans-serif; /* fun font */
+    font-size: 2em;
+    color: #ff6b6b;              /* playful pink-red */
+    text-align: center;
+    margin-top: 20vh;            /* push it down a bit */
+    text-shadow: 2px 2px #ffd93d; /* yellow shadow */
+    background: #ffeb99;         /* soft yellow background */
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 3px solid #ff477e;
+    display: inline-block;
+    box-shadow: 4px 4px #ffd93d;
+    animation: pop 0.6s ease;    /* little entrance animation */
+}

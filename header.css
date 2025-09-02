@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: "Comic Sans MS", Arial, sans-serif;
-    background: #fff8e7; /* warm cream */
+    background: #fff8e7;
+    /* warm cream */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -12,8 +13,10 @@ body {
 
 h2 {
     margin-bottom: 10px;
-    color: #ff6b6b; /* playful pink */
-    text-shadow: 1px 1px #ffd93d; /* yellow highlight */
+    color: #ff6b6b;
+    /* playful pink */
+    text-shadow: 1px 1px #ffd93d;
+    /* yellow highlight */
 }
 
 .buttons {
@@ -25,11 +28,13 @@ h2 {
 
 label,
 .button {
-    background: #ffd93d; /* bright yellow */
+    background: #ffd93d;
+    /* bright yellow */
     color: #333;
     padding: 12px;
     margin: 8px 0;
-    border: 3px solid #ff6b6b; /* pink outline */
+    border: 3px solid #ff6b6b;
+    /* pink outline */
     border-radius: 15px;
     cursor: pointer;
     font-size: 1em;
@@ -44,14 +49,16 @@ label,
 
 label:hover,
 .button:hover {
-    background: #a0e7e5; /* mint blue hover */
+    background: #a0e7e5;
+    /* mint blue hover */
     transform: scale(1.05) rotate(-2deg);
 }
 
 .game-table {
     border-collapse: collapse;
     margin: 0 auto;
-    width: 300px; /* same as button width */
+    width: 300px;
+    /* same as button width */
 }
 
 .game-table td {
@@ -70,13 +77,15 @@ label:hover,
     font-size: 0.9em;
     width: auto;
     border-radius: 12px;
-    background: #ffb347; /* orange for nav */
+    background: #ffb347;
+    /* orange for nav */
     border: 2px solid #ff6b6b;
     color: #fff;
 }
 
 .nav .button:hover {
-    background: #ff477e; /* pink hover */
+    background: #ff477e;
+    /* pink hover */
 }
 
 .left-img {
@@ -86,3 +95,24 @@ label:hover,
     max-width: 65px;
     height: auto;
 }
+
+
+/* wrapper for main content */
+main {
+    flex: 1;
+    /* pushes footer down */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    /* playful pink */
+    text-shadow: 1px 1px #ffd93d;
+    /* yellow highlight */
+}
+

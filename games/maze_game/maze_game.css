@@ -66,3 +66,23 @@ label:hover,
   background: #a0e7e5; /* mint blue hover */
   transform: scale(1.05) rotate(-2deg);
 }
+
+/* wrapper for main content */
+main {
+    flex: 1; /* still pushes footer down */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* center horizontally */
+    justify-content: center; /* center vertically */
+}
+
+
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    /* playful pink */
+    text-shadow: 1px 1px #ffd93d;
+    /* yellow highlight */
+}
