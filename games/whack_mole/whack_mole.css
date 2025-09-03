@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    background: #fffbea;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+    color: #ff6b6b;
+    text-shadow: 1px 1px #ffd93d;
+}
+
+.mole_class {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 120px);
+    gap: 0px 15px;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+main {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+input {
+    display: none;
+    /* hide checkboxes */
+}
+
+.step {
+    background: #caffbf;
+    border-radius: 15px;
+    border: 3px solid #ff6b6b;
+    box-shadow: 4px 4px #ffd93d;
+    cursor: pointer;
+    perspective: 600px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.step div.front,
+.step div.back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.step div.front {
+    background: #ffd93d;
+    color: #333;
+}
+
+.step div.back {
+    background: #a0e7e5;
+    color: #ff6b6b;
+    transform: rotateY(180deg);
+}
+
+/* flip on click */
+input[type="checkbox"]:checked+label .front {
+    transform: rotateY(180deg);
+}
+
+input[type="checkbox"]:checked+label .back {
+    transform: rotateY(0deg);
+}
+
+footer h2 {
+    margin-top: 20px;
+    color: #ff6b6b;
+    text-shadow: 1px 1px #ffd93d;
+}
+
+.buttons {
+    text-align: center;
+    grid-column: span 3;
+    /* buttons centered under grid */
+}
+
+.button {
+    background: #ffb347;
+    /* orange */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff6b6b;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: background 0.3s, transform 0.1s;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 3px #ffd93d;
+}
+
+.button:hover {
+    background: #ff477e;
+    /* pink hover */
+    transform: scale(1.08);
+}

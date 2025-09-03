@@ -75,9 +75,6 @@ p.intro {
     font-weight: bold;
 }
 
-.card:last-child {
-    grid-column: 2;
-}
 
 
 .main_image {
